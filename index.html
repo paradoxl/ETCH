@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script type="text/javascript" src="grid.js" defer></script>
+</head>
+
+<body>
+    <h1 class="top">Take some time to relax.</h1>
+    <h2 class="top">Lets draw something!</h2>
+    <div class="slide">
+        <p>Change the size of the canvas here</p>
+        <select id ="default">
+            <option>16 X 16</option>
+            <option id="large">32 X 32</option>
+        </select>
+    
+    </div>
+    <div id="container">
+    </div>
+
+    <div id="tools">
+        <button id="resetGrid">Clear Canvas</button>
+        <button id="erase">Eraser</button>
+        <button id="red"></button>
+        <button id="blue"></button>
+        <button id="green"></button>
+    </div>
+   
+    <div class="stats">
+        <p id="painted">Total Blocks Painted: </p>
+    </div>
+
+</body>

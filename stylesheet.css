@@ -1,0 +1,88 @@
+.rows {
+    min-width: 10px;
+    min-height: 10px;
+    display: inline-block;
+}
+
+.cols {
+    border: 1px solid blue;
+    width: 20px;
+    height: 20px;
+
+}
+
+#container {
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+}
+
+.black {
+    background-color: black;
+}
+
+/* 
+.cols:hover{
+    background-color: black;
+} */
+
+.slide {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 5px;
+}
+
+#tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+    bottom: 200px;
+    margin-left: 50px;
+}
+
+#red {
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    gap: 10px;
+}
+
+#blue {
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    gap: 10px;
+}
+
+#green {
+    height: 50px;
+    width: 50px;
+    background-color: green;
+}
+
+#resetGrid {
+    height: 40px;
+    width: 75px;
+}
+
+#erase {
+    height: 40px;
+    width: 75px;
+}
