@@ -5,7 +5,7 @@
 }
 
 .cols {
-    border: 1px solid blue;
+    border: 1px solid black;
     width: 20px;
     height: 20px;
 
@@ -16,6 +16,7 @@
     top: 150px;
     display: flex;
     justify-content: center;
+   
 }
 
 .top {
@@ -26,11 +27,6 @@
 .black {
     background-color: black;
 }
-
-/* 
-.cols:hover{
-    background-color: black;
-} */
 
 .slide {
     display: flex;
@@ -43,19 +39,22 @@
 #tools {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: space-around;
+    align-items: center;
     gap: 20px;
     position: relative;
     bottom: 200px;
     margin-left: 50px;
+    height: 350px;
+    width: 100px;
+    border: 3px solid black;
 }
 
 #red {
     display: flex;
     justify-items: center;
     text-align: center;
-    height: 50px;
+    height: 90px;
     width: 50px;
     background-color: red;
     gap: 10px;
@@ -65,14 +64,14 @@
     display: flex;
     justify-items: center;
     text-align: center;
-    height: 50px;
+    height: 90px;
     width: 50px;
     background-color: blue;
     gap: 10px;
 }
 
 #green {
-    height: 50px;
+    height: 90px;
     width: 50px;
     background-color: green;
 }
