@@ -1,3 +1,6 @@
+body{
+    background-color:#f6f5f3;
+}
 .rows {
     min-width: 10px;
     min-height: 10px;
@@ -8,6 +11,7 @@
     border: 1px solid black;
     width: 20px;
     height: 20px;
+    background-color: white;
 
 }
 

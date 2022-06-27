@@ -36,7 +36,23 @@ generateGrid(16, 16)
 
 // adds color to mouseover
 let blockCounter = 0;
+//Eraser
+const clickErase = document.getElementById("erase");
+clickErase.addEventListener('click', function initEraser() {
+    redOn = false;
+    greenOn = false;
+    blueOn = false;
+    eraser();
+});
 
+const erase = Array.from(document.getElementsByClassName('cols'));
+function eraser(){
+    erase.forEach(erase =>{
+        erase.addEventListener('mouseenter', function handleClickErase(){
+            erase.setAttribute('style', 'background-color: white;');
+        })
+    })
+}
 
 // listen for which color
 const cell = Array.from(document.getElementsByClassName('cols'));
@@ -127,17 +143,6 @@ reset.addEventListener('click', function clearGrid() {
         cell.setAttribute('style', 'background-color: white;')
     })
 })
-
-
-
-// eraser
-//bad logic. hungry.. tired..blah...
-//todo:
-// const erase = document.getElementById('erase');
-// erase.addEventListener('mouseenter', function erase(){
-
-// });
-
 
 
 //change size of grid
