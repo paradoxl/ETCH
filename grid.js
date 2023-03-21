@@ -48,9 +48,10 @@ clickErase.addEventListener('click', function initEraser() {
 const erase = Array.from(document.getElementsByClassName('cols'));
 function eraser(){
     erase.forEach(erase =>{
-        erase.addEventListener('mouseenter', function handleClickErase(){
+        erase.addEventListener('mousedown', function handleClickErase(){           
             erase.setAttribute('style', 'background-color: white;');
         })
+        
     })
 }
 
@@ -59,7 +60,7 @@ const cell = Array.from(document.getElementsByClassName('cols'));
 
 function blueSelected(){
 cell.forEach(cell => {
-    cell.addEventListener('mouseenter', function handleClickBlue() {
+    cell.addEventListener('mousedown', function handleClickBlue() {
       
             cell.setAttribute('style', 'background-color: blue;');
         blockCounter++;
@@ -70,7 +71,7 @@ cell.forEach(cell => {
 
 function redSelected(){
 cell.forEach(cell => {
-    cell.addEventListener('mouseenter', function handleClickred() {
+    cell.addEventListener('mousedown', function handleClickred() {
       
             cell.setAttribute('style', 'background-color: red;');
             
@@ -83,7 +84,7 @@ cell.forEach(cell => {
 
 function greenSelected(){
 cell.forEach(cell => {
-    cell.addEventListener('mouseenter', function handleClickgreen() {
+    cell.addEventListener("mousedown", function handleClickgreen() {
       
             cell.setAttribute('style', 'background-color: green;');
       
@@ -153,8 +154,6 @@ reset.addEventListener('click', function clearGrid() {
 //     const kill = Array.from(document.getElementsByClassName('cols'));
 //     kill.forEach(kill => {
 //       kill.parentElement.removeChild(kill);
-
 //     });
 //     generateCol(16);
-
 // })
